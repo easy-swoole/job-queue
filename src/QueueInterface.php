@@ -6,6 +6,6 @@ namespace EasySwoole\JobQueue;
 
 interface QueueInterface
 {
-    function pop():?AbstractJob;
+    function pop(float $timeout = 3):?AbstractJob;
     function push(AbstractJob $job):bool ;
 }
