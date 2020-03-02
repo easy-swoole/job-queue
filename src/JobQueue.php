@@ -27,15 +27,15 @@ class JobQueue
     private $afterTask;
 
 
-    function __construct(QueueInterface $jobQueue)
+    function __construct(QueueDriverInterface $jobQueue)
     {
         $this->queue = $jobQueue;
     }
 
     /**
-     * @return QueueInterface
+     * @return QueueDriverInterface
      */
-    public function getQueue(): QueueInterface
+    public function getQueue(): QueueDriverInterface
     {
         return $this->queue;
     }

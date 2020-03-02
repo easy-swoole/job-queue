@@ -3,7 +3,7 @@
 可以方便用户快速搭建多协程分布式任务处理队列
 
 ```
-class Queue implements \EasySwoole\JobQueue\QueueInterface{
+class Queue implements \EasySwoole\JobQueue\QueueDriverInterface{
 
     function pop(float $timeout = 3): ?\EasySwoole\JobQueue\AbstractJob
     {
