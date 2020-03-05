@@ -1,5 +1,5 @@
 {
-  "name": "easyswoole/jon-queue",
+  "name": "easyswoole/job-queue",
   "description": "Coroutine version of Memcache client",
   "type": "library",
   "license": "Apache-2.0",
